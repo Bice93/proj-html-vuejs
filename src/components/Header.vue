@@ -21,7 +21,7 @@
       </div>
     </section>
 
-    <section class="explore">
+    <section class="explore container">
         <h6>Fresh tasty &amp; bakery every day </h6>
         <h1>The Perfect Fresh Bread</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et quis repellendus sit quae?</p>
@@ -121,7 +121,6 @@ header {
 }
 //Stile section explore
 .explore{
-    margin-top: 10%;
-    margin-left: 20px;
+  margin-top: 10%;
 }
 </style>

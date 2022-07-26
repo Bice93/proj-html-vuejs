@@ -23,5 +23,8 @@ export default {
 
 <style lang="scss">
 @import "./styles/general.scss";
-
+.container{
+  width: 1500px;
+  margin: 0 auto;
+}
 </style>
