@@ -16,6 +16,9 @@
           :key="index"
           :product="product.img"
           :productTitle="product.title"
+          :productType="product.type"
+          :productPrice="product.price"
+          :productPriceKg="product.priceKg"
         />
       </div>
 
@@ -38,11 +41,17 @@ export default {
       products: [
         {
           img: "choco-chip-cookies-400x510.jpg",
-          title: "choco-chip-cookies",
+          title: "Choco Chip Cookies",
+          type: "Cookies, Pastries",
+          price: "$19.00",
+          priceKg: "$39.00",
         },
         {
           img: "strawberry-jam-cookies-400x510.jpg",
-          title: "strawberry-jam-cookies",
+          title: "Strawberry Jam Cookies",
+          type: "",
+          price: "",
+          priceKg: "",
         },
       ],
     };
@@ -66,7 +75,6 @@ export default {
 
 .box_card_products {
   width: 55%;
-  line-height: 0;
   position: relative;
 }
 
