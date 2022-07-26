@@ -27,8 +27,13 @@
         <h1>The Perfect Fresh Bread</h1>
         <p class="abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolore error itaque quisquam nulla, pariatur sunt minus ad veritatis ullam eligendi quos asperiores voluptatum maiores impedit rem ducimus corrupti? Explicabo.</p>
         <button class="btn">Explore our product</button>
-    </section>
+      </section>
     </div>
+
+    <section class="icon_fixed">
+        <i class="fa-solid fa-clone"></i>
+        <i class="fa-solid fa-tag"></i>
+    </section>
     
   </header>
 </template>
@@ -140,6 +145,24 @@ header {
       background-color: $ColorBrand;
       color: $white;
     }
+}
+
+.icon_fixed{
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  i{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: $white;
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+    box-shadow: 5px 10px 18px $mamba;
+  }
 }
 
 </style>
