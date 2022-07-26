@@ -20,6 +20,13 @@
         </ul>
       </div>
     </section>
+
+    <section class="explore">
+        <h6>Fresh tasty &amp; bakery every day </h6>
+        <h1>The Perfect Fresh Bread</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et quis repellendus sit quae?</p>
+        <button>Expolre our product</button>
+    </section>
   </header>
 </template>
 
@@ -74,8 +81,9 @@ header {
   background-image: url("../assets/img/hero-header-bakery.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   padding: 0 20px;
-  height: 500px;
+  height: 80vh;
 }
 
 .header_nav {
@@ -110,5 +118,10 @@ header {
       }
     }
   }
+}
+//Stile section explore
+.explore{
+    margin-top: 10%;
+    margin-left: 20px;
 }
 </style>
