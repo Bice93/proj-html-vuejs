@@ -53,8 +53,12 @@ export default {
 }
 
 .title{
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 10px 0;
   color: $ColorBrand;
+}
+
+.title_section{
+    text-align: center;
 }
 </style>
