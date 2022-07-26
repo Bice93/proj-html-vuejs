@@ -9,7 +9,13 @@
              <CardSpecialMoment v-for="(element, index) in specialElements" 
             :key="index"
             :SpecialElement="element.img"
-            :SpecialTitle="element.title"/>
+            :SpecialTitle="element.title"
+            :SpecialElementHover="element.imgHover"
+            :titleAlt="element.titleAlt"
+            :titleLoop="element.titleLoop"
+            :titleHover="element.titleHover"
+            :btn="element.btn"
+            />
     </section>
    
   </div>
@@ -28,10 +34,20 @@ components: {
         {
             img:"corporate-bg.jpg",
             title:"corporate.jpg",
+            imgHover: "corporate-hover-bg.jpg", 
+            titleAlt:"corporate-hover.jpg",
+            titleLoop: "International Bakery",
+            titleHover: "Corporate Events",
+            btn: "Explore More",
         },
         {
             img:"wedding-bg.jpg",
             title:"wedding.jpg",
+            imgHover: "wedding-hover-bg.jpg",
+            titleAlt:"wedding-hover.jpg",
+            titleLoop: "Private Dining Hall",
+            titleHover: "Weddings & Parties",
+            btn: "Explore More",
         },
       ],
     };

@@ -92,7 +92,7 @@ export default {
 .btn{
   margin-top: 2.5rem;
   background-color: $ColorBrand;
-  color: white;
+  color: $white;
      &:hover{
       background-color: $btnHover;
       color: $ColorBrand;

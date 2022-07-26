@@ -33,7 +33,7 @@ export default {
   }
 }
 .info_card {
-  width: 80%;
+  width: 100%;
   display: none;
   position: absolute;
   top: 50%;
