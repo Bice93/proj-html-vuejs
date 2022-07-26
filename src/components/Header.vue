@@ -21,12 +21,15 @@
       </div>
     </section>
 
-    <section class="explore container">
-        <h6>Fresh tasty &amp; bakery every day </h6>
+    <div class="container">
+      <section class="explore">
+        <h6 class="loop">Fresh tasty &amp; bakery every day </h6>
         <h1>The Perfect Fresh Bread</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et quis repellendus sit quae?</p>
-        <button>Expolre our product</button>
+        <p class="abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolore error itaque quisquam nulla, pariatur sunt minus ad veritatis ullam eligendi quos asperiores voluptatum maiores impedit rem ducimus corrupti? Explicabo.</p>
+        <button class="btn">Expolre our product</button>
     </section>
+    </div>
+    
   </header>
 </template>
 
@@ -121,6 +124,22 @@ header {
 }
 //Stile section explore
 .explore{
+  width: 35%;
   margin-top: 10%;
+    h1{
+      margin: 5px 0;
+      font-size: 60px;
+      color: $ColorBrand;
+    }
 }
+
+.btn{
+  background-color: $white;
+  color: $ColorBrand;
+    &:hover{
+      background-color: $ColorBrand;
+      color: $white;
+    }
+}
+
 </style>

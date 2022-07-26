@@ -1,12 +1,12 @@
 <template>
   <div class="container box_productsElement flex">
     <section class="element_shopping">
-      <h6>Our Products</h6>
-      <h1>
+      <h6 class="loop">Our Products</h6>
+      <h1 class="title">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio
         magnam veritatis.
       </h1>
-      <button>Start Shopping</button>
+      <button class="btn">Start Shopping</button>
     </section>
 
     <section class="box_card_products">
@@ -52,12 +52,16 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
+// .box_productsElement{
+//   margin-top: 8rem;
+// }
 .flex{
     display: flex;
+    justify-content: space-between;
 }
 
 .element_shopping {
-  width: 45%;
+  width: 35%;
 }
 
 .box_card_products {
@@ -66,20 +70,25 @@ export default {
   position: relative;
 }
 
-.ms_card {
-  justify-content: space-between;
-}
-
 .arrow{
-    justify-content: space-between;
     position: relative;
     bottom: 50%;
         i{
             padding: 25px 10px;
             color: $white;
             background-color: rgba($ColorBrand, 0.4);
+            cursor: pointer;
         }
 }
 
+.btn{
+  margin-top: 2.5rem;
+  background-color: $ColorBrand;
+  color: white;
+     &:hover{
+      background-color: $btnHover;
+      color: $ColorBrand;
+    }
+}
 
 </style>

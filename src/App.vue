@@ -23,8 +23,38 @@ export default {
 
 <style lang="scss">
 @import "./styles/general.scss";
+@import "./styles/variables.scss";
 .container{
   width: 1500px;
-  margin: 0 auto;
+  margin: 8rem auto;
+}
+
+.loop{
+  font-weight: 200;
+  margin: 5px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: $mamba;
+}
+
+.abstract{
+  font-size: 17px;
+  color: $mamba;
+  margin: 10px 0;
+}
+
+.btn{
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 0px solid;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight:700;
+}
+
+.title{
+  font-size: 3rem;
+  margin: 10px 0;
+  color: $ColorBrand;
 }
 </style>
