@@ -1,7 +1,14 @@
 <template>
   <div class="container">
     <div class="containerSocialCards">
-    <section class="boxSocialImage">
+        <CardSocial v-for="(element, index) in cardsSocial"
+        :key="index"
+        :image="element.img"
+        :titleAlt="element.titleAlt"/>
+    <!-- <section class="boxSocialImage">
+        <img src="../assets/img/social-1.jpg" alt="">
+    </section> -->
+    <!-- <section class="boxSocialImage">
         <img src="../assets/img/social-1.jpg" alt="">
     </section>
     <section class="boxSocialImage">
@@ -15,10 +22,7 @@
     </section>
     <section class="boxSocialImage">
         <img src="../assets/img/social-1.jpg" alt="">
-    </section>
-    <section class="boxSocialImage">
-        <img src="../assets/img/social-1.jpg" alt="">
-    </section>
+    </section> -->
     </div>
 
     <div class="socialAdded">
@@ -29,8 +33,41 @@
 </template>
 
 <script>
+import CardSocial from './CardSocial.vue';
 export default {
-
+    components:{
+        CardSocial,
+    },
+    data: function () {
+    return {
+      cardsSocial: [
+        {
+          img: "social-1.jpg",
+          titleAlt: "social-1.jpg",
+        },
+        {
+          img: "social-2.jpg",
+          titleAlt: "social-2.jpg",
+        },
+        {
+          img: "social-3.jpg",
+          titleAlt: "social-3.jpg",
+        },
+        {
+          img: "social-4.jpg",
+          titleAlt: "social-4.jpg",
+        },
+        {
+          img: "social-5.jpg",
+          titleAlt: "social-5.jpg",
+        },
+        {
+          img: "social-6.jpg",
+          titleAlt: "social-6.jpg",
+        },
+      ],
+    };
+  },
 }
 </script>
 
@@ -43,19 +80,6 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-}
-.boxSocialImage{
-    margin-bottom: 30px;
-    width: calc(100% / 4 - 20px);
-    line-height: 0;
-        img{
-            width: 100%;
-        }
-}
-
-.boxSocialImage:nth-child(2), .boxSocialImage:nth-child(3){
-   position: relative;
-   top: 23.4rem;
 }
 
 .socialAdded{
