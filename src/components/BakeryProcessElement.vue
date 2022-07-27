@@ -1,19 +1,27 @@
 <template>
   <div class="container box_process">
-      <CardProcess
-        v-for="element in elementsProcess"
-        :key="element.id"
-        :elementImage="element.img"
-        :id="element.id"
-        :elementImg="element.img"
-        :elementTitle="element.title"
-        :titleLoop="element.titleLoop"
-        :description="element.description"
-      />
-      <section class="sectionCard_process">
-        <h2>testo</h2>
-      </section>
-    
+    <CardProcess
+      v-for="element in elementsProcess"
+      :key="element.id"
+      :elementImage="element.img"
+      :id="element.id"
+      :elementImg="element.img"
+      :elementTitle="element.title"
+      :titleLoop="element.titleLoop"
+      :description="element.description"
+    />
+    <section class="sectionCard_process cardAdded">
+      <div class="citation">
+        <h6 class="loop">Dont just take our word for it</h6>
+        <h1 class="title">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ea
+          laudantium repellendus totam vero recusandae debitis facilis
+          asperiores illum perferendis non sed, neque culpa quam voluptatibus
+          doloremque, doloribus aliquam quia."
+        </h1>
+        <h5>Rachel Cooper, Founder</h5>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -57,7 +65,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../styles/variables.scss";
 .box_process {
   position: relative;
 }
@@ -66,13 +75,28 @@ export default {
   margin: 10px 0;
 }
 
-.sectionCard_process:nth-child(2), .sectionCard_process:nth-child(4) {
+.cardAdded {
+  margin: 10px 0;
+  height: 575.60px;
+  background-color: $pearlBush;
+    .citation{
+        margin: 40px auto;
+        width: 70%;
+            h5{
+                color: $mamba;
+                font-weight: 200;
+            }
+    }
+}
+
+.sectionCard_process:nth-child(2),
+.sectionCard_process:nth-child(4) {
   width: 49%;
 }
 
-.sectionCard_process:nth-child(4){
-   position: absolute;
-    top: 33%;
-    right: 0; 
+.sectionCard_process:nth-child(4) {
+  position: absolute;
+  top: 32.5%;
+  right: 0;
 }
 </style>
