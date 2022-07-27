@@ -5,6 +5,7 @@
     <FreshlyBakedElement />
     <BakeryProcessElement />
     <LocationElement />
+    <SocialElement />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import SpecialMomentElement from './SpecialMomentsElement.vue';
 import FreshlyBakedElement from './FreshlyBakedElement.vue';
 import BakeryProcessElement from './BakeryProcessElement.vue';
 import LocationElement from './LocationElement.vue';
+import SocialElement from './SocialElement.vue';
 
 export default {
     name: 'Main',
@@ -23,6 +25,7 @@ export default {
         FreshlyBakedElement,
         BakeryProcessElement,
         LocationElement,
+        SocialElement,
   }
 }
 </script>
