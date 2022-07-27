@@ -47,6 +47,18 @@ export default {
   margin: 10px 0;
 }
 
+ul{
+  list-style: none;
+    li{
+       color: $ColorBrand;
+      display: inline-block;
+      margin: 0 1rem;
+    }
+    a{
+      text-decoration: none;
+    }
+}
+
 .btn{
   padding: 10px 20px;
   margin: 10px 0;

@@ -110,21 +110,12 @@ header {
 .box_links {
   text-align: end;
   width: 80%;
-  ul {
-    list-style: none;
-    a {
-      text-decoration: none;
-    }
-    li {
-      margin: 0 1rem;
+  ul li{
       text-transform: uppercase;
-      color: $ColorBrand;
-      display: inline-block;
       padding: 7px 0;
       &:hover {
         border-bottom: 2px solid $ColorBrand;
       }
-    }
   }
 }
 //Stile section explore
