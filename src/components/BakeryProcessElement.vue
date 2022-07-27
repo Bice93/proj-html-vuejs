@@ -28,7 +28,7 @@ export default {
     return {
       elementsProcess: [
         {
-          img: "",
+          img: "bakery-process-1.jpg",
           title: "Tell us what you have in mind",
           id: "01",
           titleLoop: "Manual ingredients selection",
@@ -36,7 +36,7 @@ export default {
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae optio expedita deserunt voluptates est iusto consequatur. Iusto quam porro illum deserunt itaque soluta corporis blanditiis placeat. Ratione cumque sequi quo.",
         },
         {
-          img: "",
+          img: "bakery-process-2.jpg",
           title: "We Start Baking",
           id: "02",
           titleLoop: "Manual ingredients selection",
@@ -44,7 +44,7 @@ export default {
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae optio expedita deserunt voluptates est iusto consequatur. Iusto quam porro illum deserunt itaque soluta corporis blanditiis placeat. Ratione cumque sequi quo.",
         },
         {
-          img: "",
+          img: "bakery-process-3.jpg",
           title: "Delivered to your home",
           id: "03",
           titleLoop: "Manual ingredients selection",
@@ -63,9 +63,6 @@ export default {
 }
 
 .sectionCard_process {
-  height: calc(1000px / 2);
-  background-color: lightblue;
-  border: 1px solid black;
   margin: 10px 0;
 }
 
