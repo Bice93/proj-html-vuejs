@@ -24,6 +24,23 @@
           <button class="btn dark">Subscribe</button>
         </div>
       </section>
+
+      <section class="row_follow_footer flex">
+        <div class="box_copyright">
+          	&#169; Copyright 2012 - 2020 | Avada Therme by ThermeFusion | All Rights Reserved | Powerede by WordPress
+        </div>
+        <div class="icon_follow">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="arrow_up">
+        <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+      </section>
     </div>
   </footer>
 </template>
@@ -71,11 +88,19 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
-.box_links{
+.container{
+  margin-bottom: 10px;
+  section{
+    margin-bottom: 1.5rem;
+  }
+}
+.box_copyright, .icon_follow, 
+.box_links, .form {
   width: 50%;
-    ul{
-      margin: 2rem 0;
-    }
+}
+
+.box_links ul{
+    margin: 2rem 0;
     .numbers_order{
       display: inline-block;
       width: 30px;
@@ -88,15 +113,32 @@ export default {
       font-size: 1.2rem;
     }
 }
-.form {
-  width: 50%;
+
+.form, .icon_follow{
   text-align: end;
-  input{
+}
+
+.form input{
     padding: 10px;
     width: 200px;
     margin-right: 1rem;
     height: 2.1rem;
     border-radius: 5px;
+}
+
+.box_copyright{
+  color: $mamba;
+}
+
+.arrow_up{
+  float: right;
+  width: 50px;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: $outerSpace;
+  a{
+    color: $white;
+    text-decoration: none;
   }
 }
 </style>
