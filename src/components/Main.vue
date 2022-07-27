@@ -3,6 +3,7 @@
     <ProductsElement />
     <SpecialMomentElement />
     <FreshlyBakedElement />
+    <BakeryProcessElement />
   </main>
 </template>
 
@@ -10,6 +11,7 @@
 import ProductsElement from './ProductsElement.vue';
 import SpecialMomentElement from './SpecialMomentsElement.vue';
 import FreshlyBakedElement from './FreshlyBakedElement.vue';
+import BakeryProcessElement from './BakeryProcessElement.vue';
 
 export default {
     name: 'Main',
@@ -17,6 +19,7 @@ export default {
         ProductsElement,
         SpecialMomentElement,
         FreshlyBakedElement,
+        BakeryProcessElement,
   }
 }
 </script>
