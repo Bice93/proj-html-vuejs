@@ -6,7 +6,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio
         magnam veritatis.
       </h1>
-      <button class="btn">Start Shopping</button>
+      <button class="btn dark">Start Shopping</button>
     </section>
 
     <section class="box_card_products">
@@ -66,16 +66,6 @@ export default {
 // }
 .flex{
     justify-content: space-between;
-}
-
-.btn{
-  margin-top: 2.5rem;
-  background-color: $ColorBrand;
-  color: $white;
-     &:hover{
-      background-color: $btnHover;
-      color: $ColorBrand;
-    }
 }
 
 </style>

@@ -5,28 +5,14 @@
         :key="index"
         :image="element.img"
         :titleAlt="element.titleAlt"/>
-    <!-- <section class="boxSocialImage">
-        <img src="../assets/img/social-1.jpg" alt="">
-    </section> -->
-    <!-- <section class="boxSocialImage">
-        <img src="../assets/img/social-1.jpg" alt="">
-    </section>
-    <section class="boxSocialImage">
-        <img src="../assets/img/social-1.jpg" alt="">
-    </section>
-    <section class="boxSocialImage">
-        <img src="../assets/img/social-1.jpg" alt="">
-    </section>
-    <section class="boxSocialImage">
-        <img src="../assets/img/social-1.jpg" alt="">
-    </section>
-    <section class="boxSocialImage">
-        <img src="../assets/img/social-1.jpg" alt="">
-    </section> -->
     </div>
 
     <div class="socialAdded">
-        <h1>Testo</h1>
+        <div>
+            <h6 class="loop">Made for sharing</h6>
+            <h1 class="title">Let's stay in touch</h1>
+            <button class="btn dark"><i class="fa-brands fa-instagram"></i> Follow us</button>
+        </div>
     </div>
    
   </div>
@@ -72,6 +58,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../styles/variables.scss";
 .container{
     position: relative;
 }
@@ -85,9 +72,17 @@ export default {
 .socialAdded{
     width: calc(100% / 2 - 15px);
     height: 345px;
-    border: 1px solid black;
+    background-color: rgba($lightPurple, 0.1);
     position: absolute;
     bottom: 25.2rem;
     right: 24.1rem;
+    text-align: center;
+    div{
+        margin-top: 5rem;
+
+        i{
+            margin-right: 10px;
+        }
+    }
 }
 </style>

@@ -56,6 +56,16 @@ export default {
   font-weight:700;
 }
 
+.dark{
+   margin-top: 2.5rem;
+  background-color: $ColorBrand;
+  color: $white;
+    &:hover{
+      background-color: $btnHover;
+      color: $ColorBrand;
+    }
+}
+
 .title{
   font-size: 2.5rem;
   margin: 10px 0;
