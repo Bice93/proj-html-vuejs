@@ -24,15 +24,16 @@ export default {
 <style lang="scss">
 @import "./styles/general.scss";
 @import "./styles/variables.scss";
+//Stile contenitore
 .container{
   width: 1500px;
   margin: 8rem auto;
 }
-
+//classe flex
 .flex{
     display: flex;
 }
-
+//stile dei titoli
 .loop{
   font-weight: 200;
   margin: 5px 0;
@@ -41,12 +42,18 @@ export default {
   color: $mamba;
 }
 
+.title{
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: $ColorBrand;
+}
+
 .abstract{
   font-size: 17px;
   color: $mamba;
   margin: 10px 0;
 }
-
+//Stile lista
 ul{
   list-style: none;
     li{
@@ -58,7 +65,7 @@ ul{
       text-decoration: none;
     }
 }
-
+//Stile bottoni
 .btn{
   padding: 10px 20px;
   margin: 10px 0;
@@ -78,10 +85,13 @@ ul{
     }
 }
 
-.title{
-  font-size: 2.5rem;
-  margin: 10px 0;
+.light{
+  background-color: $white;
   color: $ColorBrand;
+    &:hover{
+      background-color: $ColorBrand;
+      color: $white;
+    }
 }
 
 .title_section{
@@ -102,7 +112,7 @@ ul{
   width: 55%;
   position: relative;
 }
-
+//Stile frecce di next e previous
 .arrow{
     position: relative;
     bottom: 50%;

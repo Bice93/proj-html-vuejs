@@ -9,7 +9,7 @@
             <ul class="infoInline">
                 <li>Call us <span> {{ phone }} </span></li>
                 <li>Open all Week <span> {{ hours }} </span></li>
-                <li><button class="btn">View Map</button></li>
+                <li><button class="btn light">View Map</button></li>
             </ul>
         </div>
     </div>
@@ -68,10 +68,6 @@ span {
     color: $mamba;
     text-transform: uppercase;
     font-size: 14px;
-  }
-  .btn {
-    background-color: $white;
-    color: $ColorBrand;
   }
 }
 </style>

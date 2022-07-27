@@ -4,7 +4,7 @@
       <section>
         <h6 class="loop">Try our seasonal products</h6>
         <h1>Order for pick-up or delivery to your home</h1>
-        <button class="btn">Shop Now</button>
+        <button class="btn light">Shop Now</button>
       </section>
     </div>
   </div>
@@ -32,15 +32,6 @@ export default {};
     color: $white;
     font-size: 3rem;
     margin: 2rem 0;
-  }
-}
-
-.btn {
-  background-color: $white;
-  color: $ColorBrand;
-  &:hover {
-    background-color: $ColorBrand;
-    color: $white;
   }
 }
 </style>

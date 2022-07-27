@@ -10,7 +10,7 @@
             ullam eligendi quos asperiores voluptatum maiores impedit rem ducimus
             corrupti? Explicabo.
         </p>
-        <button class="btn">Start Shopping</button>
+        <button class="btn dark">Start Shopping</button>
         </section>
 
         <section class="box_card_products">

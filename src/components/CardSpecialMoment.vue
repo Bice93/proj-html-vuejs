@@ -12,7 +12,7 @@
       <span class="info_card_special">
         <h6>{{ titleLoop }}</h6>
         <h1>{{ titleHover }}</h1>
-        <button class="btn">{{ btn }}</button>
+        <button class="btn dark">{{ btn }}</button>
       </span>
     </div>
   </div>
@@ -70,10 +70,6 @@ export default {
   }
   h1 {
     font-size: 2rem;
-  }
-  .btn {
-    background-color: $ColorBrand;
-    color: $white;
   }
 }
 </style>

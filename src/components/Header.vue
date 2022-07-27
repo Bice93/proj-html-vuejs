@@ -26,7 +26,7 @@
         <h6 class="loop">Fresh tasty &amp; bakery every day </h6>
         <h1>The Perfect Fresh Bread</h1>
         <p class="abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolore error itaque quisquam nulla, pariatur sunt minus ad veritatis ullam eligendi quos asperiores voluptatum maiores impedit rem ducimus corrupti? Explicabo.</p>
-        <button class="btn">Explore our product</button>
+        <button class="btn light">Explore our product</button>
       </section>
     </div>
 
@@ -126,15 +126,6 @@ header {
       margin: 5px 0;
       font-size: 60px;
       color: $ColorBrand;
-    }
-}
-
-.btn{
-  background-color: $white;
-  color: $ColorBrand;
-    &:hover{
-      background-color: $ColorBrand;
-      color: $white;
     }
 }
 
