@@ -18,7 +18,11 @@
           </ul>
         </div>
 
-        <div class="form"></div>
+        <div class="form">
+          <h1 class="title">Subscribe to our Newsletter</h1>
+          <input type="email" placeholder="Enter email address*">
+          <button class="btn dark">Subscribe</button>
+        </div>
       </section>
     </div>
   </footer>
@@ -86,5 +90,13 @@ export default {
 }
 .form {
   width: 50%;
+  text-align: end;
+  input{
+    padding: 10px;
+    width: 200px;
+    margin-right: 1rem;
+    height: 2.1rem;
+    border-radius: 5px;
+  }
 }
 </style>
