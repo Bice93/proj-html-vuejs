@@ -65,28 +65,7 @@ export default {
 //   margin-top: 8rem;
 // }
 .flex{
-    display: flex;
     justify-content: space-between;
-}
-
-.element_shopping {
-  width: 35%;
-}
-
-.box_card_products {
-  width: 55%;
-  position: relative;
-}
-
-.arrow{
-    position: relative;
-    bottom: 50%;
-        i{
-            padding: 25px 10px;
-            color: $white;
-            background-color: rgba($ColorBrand, 0.4);
-            cursor: pointer;
-        }
 }
 
 .btn{
