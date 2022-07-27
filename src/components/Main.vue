@@ -6,6 +6,7 @@
     <BakeryProcessElement />
     <LocationElement />
     <SocialElement />
+    <DeliveryElement />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import FreshlyBakedElement from './FreshlyBakedElement.vue';
 import BakeryProcessElement from './BakeryProcessElement.vue';
 import LocationElement from './LocationElement.vue';
 import SocialElement from './SocialElement.vue';
+import DeliveryElement from './DeliveryElement.vue';
 
 export default {
     name: 'Main',
@@ -26,6 +28,7 @@ export default {
         BakeryProcessElement,
         LocationElement,
         SocialElement,
+        DeliveryElement,
   }
 }
 </script>
