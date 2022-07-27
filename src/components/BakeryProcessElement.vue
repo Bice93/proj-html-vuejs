@@ -16,8 +16,7 @@
         <h1 class="title">
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ea
           laudantium repellendus totam vero recusandae debitis facilis
-          asperiores illum perferendis non sed, neque culpa quam voluptatibus
-          doloremque, doloribus aliquam quia."
+          asperiores."
         </h1>
         <h5>Rachel Cooper, Founder</h5>
       </div>
@@ -80,11 +79,11 @@ export default {
   height: 575.60px;
   background-color: $pearlBush;
     .citation{
-        margin: 40px auto;
+        margin: 100px auto;
         width: 70%;
             h5{
                 color: $mamba;
-                font-weight: 200;
+                font-weight: 600;
             }
     }
 }

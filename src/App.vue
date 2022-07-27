@@ -35,8 +35,8 @@ export default {
 }
 //stile dei titoli
 .loop{
-  font-weight: 200;
-  margin: 5px 0;
+  font-weight: 600;
+  margin: 10px 0;
   font-size: 13px;
   text-transform: uppercase;
   color: $mamba;
@@ -100,6 +100,7 @@ ul{
 
 .element_shopping {
   width: 35%;
+  align-self: center;
 }
 
 .cards_inline{

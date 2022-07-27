@@ -87,7 +87,6 @@ export default {
 
 .element_shopping{
     text-align: center;
-    align-self: center;
 }
 
 .box_card_products {

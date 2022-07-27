@@ -10,7 +10,7 @@
         :alt="titleAlt"
       />
       <span class="info_card_special">
-        <h6>{{ titleLoop }}</h6>
+        <h6 class="loop">{{ titleLoop }}</h6>
         <h1>{{ titleHover }}</h1>
         <button class="btn dark">{{ btn }}</button>
       </span>
@@ -65,8 +65,7 @@ export default {
     margin: 9px 0;
   }
   h6 {
-    text-transform: uppercase;
-    font-weight: 100;
+    color: $white;
   }
   h1 {
     font-size: 2rem;

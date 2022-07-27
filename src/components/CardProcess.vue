@@ -11,7 +11,7 @@
         </div>
         
         <div class="box_description">
-            <h5>{{ titleLoop }}</h5>
+            <h6 class="loop">{{ titleLoop }}</h6>
             <p>{{ description }}</p>
         </div>
        
@@ -35,6 +35,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
+.loop{
+  color: $white;
+  font-weight: 300;
+}
+
 .sectionCard_process{
     position: relative;
 }
@@ -56,7 +61,7 @@ img {
     left: 0;
     color: $white;
     padding: 30px;
-    background-color: rgba($outerSpace, 0.5);
+    background-color: rgba($outerSpace, 0.6);
     .box_title{
         display: flex;
         justify-content: space-between;
