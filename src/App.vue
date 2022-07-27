@@ -70,6 +70,12 @@ export default {
   width: 35%;
 }
 
+.cards_inline{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
 .box_card_products {
   width: 55%;
   position: relative;
