@@ -49,7 +49,7 @@ export default {
         {
           img: "strawberry-jam-cookies-400x510.jpg",
           title: "Strawberry Jam Cookies",
-          type: "Cookies, Pastries",
+          type: "",
           price: "24.00",
           priceKg: "62.00",
         },

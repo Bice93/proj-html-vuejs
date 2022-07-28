@@ -1,11 +1,10 @@
 <template>
     <div class="card">
       <img :src="require('../assets/img/' + product)" :alt="productTitle" />
-      <span v-if="productTitle && productType && productPrice && productPriceKg"
-        class="info_card">
-        <h1>{{ productTitle }}</h1>
-        <h4>{{ productType }}</h4>
-        <h2>$ {{ productPrice }} - $ {{ productPriceKg }}</h2>
+      <span class="info_card">
+        <h1>{{ viewElement(productTitle) }}</h1>
+        <h4>{{ viewElement(productType) }}</h4>
+        <h2>$ {{ viewElement(productPrice) }} - $ {{ viewElement(productPriceKg) }}</h2>
       </span>
     </div>
 </template>
@@ -19,6 +18,14 @@ export default {
     productPrice: String,
     productPriceKg: String,
   },
+
+  methods:{
+    viewElement(element){
+      if(element != "" || null){
+        return element;
+      };
+    },
+  }
 };
 </script>
 
