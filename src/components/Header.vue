@@ -37,8 +37,14 @@
     </div>
 
     <section class="icon_fixed">
-      <i class="fa-solid fa-clone"></i>
-      <i class="fa-solid fa-tag"></i>
+      <div>
+        <i class="fa-solid fa-clone"></i>
+        <h4>Demos</h4>
+      </div>
+       <div>
+        <span class="sale">&#36;39</span>
+        <h4>On Sale</h4>
+      </div>
     </section>
   </header>
 </template>
@@ -136,17 +142,22 @@ header {
   position: fixed;
   top: 80px;
   right: 20px;
-  i {
+  div {
     width: 60px;
-    height: 60px;
     text-align: center;
-    line-height: 60px;
+    padding: 10px 0;
     background-color: $white;
+    color: $outerSpace;
     border-radius: 5px;
     display: block;
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 15px;
     box-shadow: 5px 10px 18px $mamba;
+      .sale{
+        color: green;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
   }
 }
 </style>
