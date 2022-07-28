@@ -1,45 +1,45 @@
 <template>
   <div id="app">
-    <Header/>
-    <Main/>
-    <Footer/>
+    <Header />
+    <Main />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
+import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Main,
     Footer,
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">
 @import "./styles/general.scss";
 @import "./styles/variables.scss";
 //Stile contenitore
-.container{
+.container {
   width: 1500px;
   margin: 8rem auto;
 }
 //classe flex
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.between{
+.between {
   justify-content: space-between;
 }
 
 //stile dei titoli
-.loop{
+.loop {
   font-weight: 600;
   margin: 10px 0;
   font-size: 13px;
@@ -47,60 +47,60 @@ export default {
   color: $mamba;
 }
 
-.title{
+.title {
   font-size: 2.5rem;
   margin: 10px 0;
   color: $ColorBrand;
 }
 
-.abstract{
+.abstract {
   font-size: 17px;
   color: $mamba;
   margin: 10px 0;
 }
 //Stile lista
-ul{
+ul {
   list-style: none;
-    li{
-       color: $ColorBrand;
-      display: inline-block;
-      margin: 0 1rem;
-    }
-    a{
-      text-decoration: none;
-    }
+  li {
+    color: $ColorBrand;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 //Stile bottoni
-.btn{
+.btn {
   padding: 10px 20px;
   margin: 10px 0;
   border: 0px solid;
   border-radius: 7px;
   cursor: pointer;
-  font-weight:700;
+  font-weight: 700;
 }
 
-.dark{
-   margin-top: 2.5rem;
+.dark {
+  margin-top: 2.5rem;
   background-color: $ColorBrand;
   color: $white;
-    &:hover{
-      background-color: $btnHover;
-      color: $ColorBrand;
-    }
+  &:hover {
+    background-color: $btnHover;
+    color: $ColorBrand;
+  }
 }
 
-.light{
+.light {
   background-color: $white;
   color: $ColorBrand;
-    &:hover{
-      background-color: $ColorBrand;
-      color: $white;
-    }
+  &:hover {
+    background-color: $ColorBrand;
+    color: $white;
+  }
 }
 
-.title_section{
-    text-align: center;
+.title_section {
+  text-align: center;
 }
 
 .element_shopping {
@@ -108,8 +108,8 @@ ul{
   align-self: center;
 }
 
-.cards_inline{
-    margin-top: 2.5rem;
+.cards_inline {
+  margin-top: 2.5rem;
 }
 
 .box_card_products {
@@ -118,14 +118,17 @@ ul{
 }
 
 //Stile frecce di next e previous
-.arrow{
-    position: relative;
-    bottom: 50%;
-        i{
-            padding: 25px 10px;
-            color: $white;
-            background-color: rgba($ColorBrand, 0.4);
-            cursor: pointer;
-        }
+.arrow {
+  position: relative;
+  bottom: 50%;
+  padding: 25px 10px;
+  color: $white;
+  background-color: rgba($ColorBrand, 0.4);
+  cursor: pointer;
+}
+
+.arrow_right {
+  position: absolute;
+  right: 0;
 }
 </style>

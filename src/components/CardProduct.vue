@@ -32,6 +32,7 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
 .card {
+  cursor: pointer;
   position: relative;
   &:hover .info_card {
     display: block;

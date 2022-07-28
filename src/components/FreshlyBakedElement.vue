@@ -26,10 +26,10 @@
               />
           </div>
 
-          <div class="arrow flex between">
-              <i class="fa-solid fa-chevron-left arrow arrow_left"></i>
-              <i class="fa-solid fa-chevron-right arrow_right"></i>
-          </div>
+
+          <i class="fa-solid fa-chevron-left arrow arrow_left"></i>
+          <i class="fa-solid fa-chevron-right arrow arrow_right"></i>
+
         </section>
   </div>
 </template>
