@@ -43,15 +43,15 @@ export default {
           img: "choco-chip-cookies-400x510.jpg",
           title: "Choco Chip Cookies",
           type: "Cookies, Pastries",
-          price: "$19.00",
-          priceKg: "$39.00",
+          price: "19.00",
+          priceKg: "39.00",
         },
         {
           img: "strawberry-jam-cookies-400x510.jpg",
           title: "Strawberry Jam Cookies",
-          type: "",
-          price: "",
-          priceKg: "",
+          type: "Cookies, Pastries",
+          price: "24.00",
+          priceKg: "62.00",
         },
       ],
     };
@@ -61,9 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
-// .box_productsElement{
-//   margin-top: 8rem;
-// }
+
 .flex{
     justify-content: space-between;
 }

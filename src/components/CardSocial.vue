@@ -23,9 +23,8 @@ export default {
         }
 }
 
-.boxSocialImage:nth-child(2), .boxSocialImage:nth-child(3){
-   position: relative;
-   top: 23.4rem;
+.boxSocialImage:nth-child(1){
+  margin-right: 28rem;
 }
 
 </style>

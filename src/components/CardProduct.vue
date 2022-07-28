@@ -1,13 +1,11 @@
 <template>
     <div class="card">
       <img :src="require('../assets/img/' + product)" :alt="productTitle" />
-      <span
-        v-if="productTitle && productType && productPrice && productPriceKg"
-        class="info_card"
-      >
+      <span v-if="productTitle && productType && productPrice && productPriceKg"
+        class="info_card">
         <h1>{{ productTitle }}</h1>
         <h4>{{ productType }}</h4>
-        <h2>{{ productPrice }} - {{ productPriceKg }}</h2>
+        <h2>$ {{ productPrice }} - $ {{ productPriceKg }}</h2>
       </span>
     </div>
 </template>
@@ -31,14 +29,21 @@ export default {
   &:hover .info_card {
     display: block;
   }
+  img{
+    height: 100%;
+    width: 100%;
+  }
 }
 .info_card {
   width: 100%;
+  height: 100%;
+  padding-top: 12rem;
   display: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgba($outerSpace, 0.3);
   color: $white;
   text-align: center;
   * {

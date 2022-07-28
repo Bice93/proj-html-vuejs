@@ -1,8 +1,8 @@
 <template>
-  <div class="container box_productsElement flex">
+  <div class="container box_productsElement flex between">
         <section class="element_shopping">
         <h1 class="title">
-            Lorem ipsum dolor sit amet consectetur.
+            Find a freshly baked product perfect for you
         </h1>
         <p class="abstract">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
@@ -14,22 +14,22 @@
         </section>
 
         <section class="box_card_products">
-        <div class="ms_card flex">
-            <CardFreshlyBaked
-            v-for="(product, index) in freshlyProducts"
-            :key="index"
-            :product="product.img"
-            :productTitle="product.title"
-            :productType="product.type"
-            :productPrice="product.price"
-            :productPriceKg="product.priceKg"
-            />
-        </div>
+          <div class="ms_card flex between">
+              <CardFreshlyBaked
+              v-for="(product, index) in freshlyProducts"
+              :key="index"
+              :product="product.img"
+              :productTitle="product.title"
+              :productType="product.type"
+              :productPrice="product.price"
+              :productPriceKg="product.priceKg"
+              />
+          </div>
 
-        <div class="arrow flex">
-            <i class="fa-solid fa-chevron-left arrow arrow_left"></i>
-            <i class="fa-solid fa-chevron-right arrow_right"></i>
-        </div>
+          <div class="arrow flex between">
+              <i class="fa-solid fa-chevron-left arrow arrow_left"></i>
+              <i class="fa-solid fa-chevron-right arrow_right"></i>
+          </div>
         </section>
   </div>
 </template>
@@ -80,10 +80,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
-
-.flex {
-  justify-content: space-between;
-}
 
 .element_shopping{
     text-align: center;

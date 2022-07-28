@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="containerSocialCards">
+  <div id="socialGallery" class="container">
+    <div class="containerSocialCards flex between">
         <CardSocial v-for="(element, index) in cardsSocial"
         :key="index"
         :image="element.img"
@@ -63,9 +63,7 @@ export default {
     position: relative;
 }
 .containerSocialCards{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     position: relative;
 }
 
@@ -74,7 +72,7 @@ export default {
     height: 345px;
     background-color: rgba($lightPurple, 0.1);
     position: absolute;
-    bottom: 25.2rem;
+    bottom: 25.3rem;
     right: 24.1rem;
     text-align: center;
     div{

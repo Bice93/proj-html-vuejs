@@ -33,6 +33,11 @@ export default {
 .flex{
     display: flex;
 }
+
+.between{
+  justify-content: space-between;
+}
+
 //stile dei titoli
 .loop{
   font-weight: 600;
@@ -104,8 +109,6 @@ ul{
 }
 
 .cards_inline{
-    display: flex;
-    justify-content: space-between;
     margin-top: 2.5rem;
 }
 
@@ -113,6 +116,7 @@ ul{
   width: 55%;
   position: relative;
 }
+
 //Stile frecce di next e previous
 .arrow{
     position: relative;

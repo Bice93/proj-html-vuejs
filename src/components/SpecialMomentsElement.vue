@@ -5,7 +5,7 @@
         <h1 class="title">Baking special Moments</h1>
     </section>
 
-    <section class="cards_inline">
+    <section class="cards_inline flex between">
              <CardSpecialMoment v-for="(element, index) in specialElements" 
             :key="index"
             :SpecialElement="element.img"

@@ -1,11 +1,11 @@
 <template>
-    <div class="container">
+    <div id="location" class="container">
         <section class="title_section">
         <h6 class="loop">Locations</h6>
         <h1 class="title">Visit our Bakeries</h1>
         </section>
 
-        <section class="cards_inline">
+        <section class="cards_inline flex between">
             <CardLocation v-for="(element, index) in elementsLocation"
             :key="index"
             :image="element.img"

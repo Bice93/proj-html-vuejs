@@ -1,12 +1,13 @@
 <template>
   <header>
-    <section class="header_nav">
+    <section class="header_nav flex between">
       <!-- Logo -->
       <div class="box_logo">
-        <img
-          src="../assets/img/avada-bakery-logo.png"
-          alt="Bakery_Logo_Brand"
-        />
+        <a id="anchorHeader" href="#"
+          ><img
+            src="../assets/img/avada-bakery-logo.png"
+            alt="Bakery_Logo_Brand"
+        /></a>
       </div>
       <!-- Link -->
       <div class="box_links">
@@ -23,18 +24,22 @@
 
     <div class="container">
       <section class="explore">
-        <h6 class="loop">Fresh tasty &amp; bakery every day </h6>
+        <h6 class="loop">Fresh tasty &amp; bakery every day</h6>
         <h1>The Perfect Fresh Bread</h1>
-        <p class="abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolore error itaque quisquam nulla, pariatur sunt minus ad veritatis ullam eligendi quos asperiores voluptatum maiores impedit rem ducimus corrupti? Explicabo.</p>
+        <p class="abstract">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          dolore error itaque quisquam nulla, pariatur sunt minus ad veritatis
+          ullam eligendi quos asperiores voluptatum maiores impedit rem ducimus
+          corrupti? Explicabo.
+        </p>
         <button class="btn light">Explore our product</button>
       </section>
     </div>
 
     <section class="icon_fixed">
-        <i class="fa-solid fa-clone"></i>
-        <i class="fa-solid fa-tag"></i>
+      <i class="fa-solid fa-clone"></i>
+      <i class="fa-solid fa-tag"></i>
     </section>
-    
   </header>
 </template>
 
@@ -58,11 +63,11 @@ export default {
         },
         {
           text: "Gallery",
-          url: "#",
+          url: "#socialGallery",
         },
         {
           text: "Location",
-          url: "#",
+          url: "#location",
         },
         {
           text: "Journal",
@@ -95,8 +100,6 @@ header {
 }
 
 .header_nav {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 // Stile Logo
@@ -110,30 +113,30 @@ header {
 .box_links {
   text-align: end;
   width: 80%;
-  ul li{
-      text-transform: uppercase;
-      padding: 7px 0;
-      &:hover {
-        border-bottom: 2px solid $ColorBrand;
-      }
+  ul li {
+    text-transform: uppercase;
+    padding: 7px 0;
+    &:hover a{
+      border-bottom: 3px solid $ColorBrand;
+    }
   }
 }
 //Stile section explore
-.explore{
+.explore {
   width: 35%;
   margin-top: 10%;
-    h1{
-      margin: 5px 0;
-      font-size: 60px;
-      color: $ColorBrand;
-    }
+  h1 {
+    margin: 5px 0;
+    font-size: 60px;
+    color: $ColorBrand;
+  }
 }
 
-.icon_fixed{
+.icon_fixed {
   position: fixed;
   top: 80px;
   right: 20px;
-  i{
+  i {
     width: 60px;
     height: 60px;
     text-align: center;
@@ -146,5 +149,4 @@ header {
     box-shadow: 5px 10px 18px $mamba;
   }
 }
-
 </style>

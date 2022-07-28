@@ -39,7 +39,7 @@
         </div>
       </section>
       <section class="arrow_up">
-        <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+        <a href="#anchorHeader"><i class="fa-solid fa-chevron-up"></i></a>
       </section>
     </div>
   </footer>
